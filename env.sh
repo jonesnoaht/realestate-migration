@@ -1,0 +1,1 @@
+nix-shell --packages 'rstudioWrapper.override{ packages = with rPackages; [ ggplot2 dplyr xts purrr sf rnaturalearth rnaturalearthdata rnaturalearthhires cowplot googleway ggrepel ggspatial libwgeom ]; }' --run 'rstudio migration.Rproj'
