@@ -5,4 +5,4 @@ libs <- list("dplyr", "googlePolylines", "googleway", "ggspatial", "ggrepel",
              "grDevices", "utils", "datasets", "methods", "base", "rnaturalearth",
              "rnaturalearthdata")
 all(lapply(libs, library, character.only = T, logical = T))
-sp::plot(ne_states(country = "united states"))
+sp::plot(ne_states(country = "united states of america", state = "florida"))
